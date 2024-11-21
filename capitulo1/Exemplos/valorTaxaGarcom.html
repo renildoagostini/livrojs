@@ -1,0 +1,10 @@
+<!--ELABORAR UM PROGRAMA QUE LEIA O VALOR DE UM JANTAR. CALCULE E INFORME O VALOR DA TAXA DO GARÇOM(10%) E O VALOR TOTAL A SER PAGO-->
+
+<meta charset="UTF-8">
+
+<script>
+    const conta = Number(prompt("Informe o valor da conta: R$ "));
+    const garcom = conta * 0.10;
+    const totalPagar = conta + garcom;
+    alert(`Taxa Garcom R$: ${garcom.toFixed(2)}\nTotal R$: ${totalPagar.toFixed(2)}`);
+</script>

@@ -1,0 +1,12 @@
+<!--ELABORAR UM PROGRAMA PARA UMA LOJA, A QUAL LEIA O PREÇO DE UM PRODUTO E INFORME AS OPÇÕES DE PAGAMENTO DA LOJA. CALCULE I INFORME O VALOR DE PAGAMENTO A VISTA COM 10% DE DESCONTO E O VALOR EM 3X -->
+
+<meta charset="utf-8">
+
+<script>
+    const preco = Number(prompt("Informe o preço do produto: R$ "));
+
+    const aVita = preco - (preco * 0.10);
+    const prazo = preco / 3;
+
+    alert(`O preço do produto a vista com desconto de 10% é: R$ ${aVita.toFixed(2)}\nO preco do produto dividido em 3x é: R$ ${prazo.toFixed(2)}`);
+</script>
