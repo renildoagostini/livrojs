@@ -1,0 +1,28 @@
+<!--
+Após validação o programa exibe todos os numeros pares entre 1 e o numero informado pelo cliente
+-->
+
+<script>
+    //declara a variável numero com let, pois ela pode ser alterada e será fora do bloco do...while
+    let numero;
+
+    do{
+        numero = Number(prompt("Número: "));
+        if(numero === 0 || isNaN(numero)){
+            alert("Digite um número válido")
+        }        
+    }while(numero === 0 || isNaN(numero));
+
+    let pares = `Pares entre 1 e ${numero}: `;
+
+    for(let i = 2; i <= numero; i = i + 2){
+        if(numero === i){
+            pares = pares + numero + "."
+        }else{
+            pares = pares + i + ", ";
+        }       
+    }
+
+    alert(pares);
+
+</script>
