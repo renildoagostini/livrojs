@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de Loja</title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <img src="img/caixa.jpg" alt="Caixa">
+    <h1>Programa Caixa de Loja</h1>
+
+    <form action="">
+        <p>
+            <label for="inDataVencimento">Data de Vencimento</label>
+            <input type="date" name="" id="inDataVencimento" autofocus required>
+        </p>
+
+        <p>
+            <label for="inValorConta">Valor da Conta R$:</label>
+            <input type="number" name="" id="inValorConta" min="0" step="0.01" required class="alinha-direita">
+            <input type="submit" value="Calcular Multa e Juros">
+        </p>
+
+        <p>
+            <label for="outMulta">Valor da Multa R$:</label>
+            <input type="number" name="" id="outMulta" class="alinha-direita" readonly>
+        </p>
+
+        <p>
+            <label for="inValorJuros">Valor do Juro R$:</label>
+            <input type="number" name="" id="outJuros" class="alinha-direita">
+        </p>
+
+        <p>
+            <label for="outTotal">Total a pagar R$: </label>
+            <input type="number" name="" id="outTotal" class="alinha-direita" readonly>
+            <input type="reset" value="Nova Conta">
+        </p>
+    </form>
+
+    <script src="js/caixaLoja.js"></script>
+</body>
+</html>
