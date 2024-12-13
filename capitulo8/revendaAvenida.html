@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenda Avenida</title>
+    <link rel="shortcut icon" href="/img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <img src="/img/revendaAvenida.jpg" alt="Revenda Avenida" class="alta">  
+    <h1>Revenda Avenida</h1>  
+
+    <form>
+        <p>
+            <label for="inModelo">Modelo do veículo:</label>
+            <input type="text" name="" id="inModelo" required autofocus>
+        </p>
+        <p>
+            <label for="inAno">Ano de Fabricação:</label>
+            <input type="number" name="" id="inAno" required>
+        </p>
+
+        <p>
+            <label for="inPreco">Preço R$: </label>
+            <input type="number"  id="inPreco" required min="0" step="0.01">
+        </p>
+
+        <input type="submit" value="Calcular Entrada e Parcelas">
+    </form>
+
+    <h2 id="outResp1"></h2>
+    <h2 id="outResp2"></h2>
+    <h2 id="outResp3"></h2>
+
+    
+    <script type="module" src="js/revendaAvenida.js"></script>
+
+    
+</body>
+</html> 
