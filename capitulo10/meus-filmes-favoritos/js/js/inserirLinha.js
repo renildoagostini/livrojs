@@ -7,5 +7,8 @@ export const inserirLinha = (titulo, genero, tabela) => {
 
     col1.innerText = titulo; // joga um conteúdo em cada célula
     col2.innerText = genero;
-    col3.innerHTML = "<i class='exclui' title='Excluir'>&#10008;</i>";
+    col3.innerHTML = "<i class='exclui' title='Excluir'>&#128465;</i>";
+
+    //configura o cursor como point para ícone de exclusão
+    col3.querySelector(".exclui").style.cursor = "pointer";
 };
